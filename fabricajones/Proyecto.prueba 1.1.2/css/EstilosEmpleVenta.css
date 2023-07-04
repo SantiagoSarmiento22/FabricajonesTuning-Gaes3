@@ -1,0 +1,279 @@
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: #2d3235;
+    --bg-menu: #252A2E;
+    --bg-body: #C7E1FF;
+}
+
+/* GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco);
+}
+
+/* LAYOUT */
+.cerrar {
+    position: absolute;
+    top: 900px;
+}
+.menu  a{
+    color: #E0E0E0  ;
+    text-decoration: none;
+}
+
+.menu-dashboard {
+    max-width: 150px;
+    height: 100vh;
+    background: var(--bg-menu);
+    padding: 20px;
+    transition: max-width .3s ease;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo img {
+
+    height: 65px;
+    width: 90px;
+    transition: width .3s ease;
+}
+
+.top-menu .logo span {
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .toggle {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.top-menu .toggle i {
+    font-size: 35px;
+}
+.cerrar {
+    position: absolute;
+    top: 900px;
+}
+/* ENLACES MENU */
+
+.menu .enlace {
+    width: 100%;
+    padding: 20px 0 20px 17px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+.menu .enlace:hover {
+    background: var(--azul-opacidad);
+}
+
+.menu .enlace i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.menu .enlace span {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open {
+    max-width: 300px;
+}
+
+.menu-dashboard.open .top-menu .logo span {
+    display: block;
+}
+
+.menu-dashboard.open .input-search
+.menu-dashboard.open .menu .enlace {
+    width: auto;
+}
+
+.menu-dashboard.open .input-search .input {
+    display: block;
+}
+
+.menu-dashboard.open .menu .enlace {
+    padding: 20px;
+}
+
+.menu-dashboard.open .menu .enlace span {
+    opacity: 1;
+}   
+
+
+
+/*menu usuario*/
+
+ 
+/*carousel*/
+body { 
+    background-image: linear-gradient(-10deg, #30363c 50%, #30363c 50%);
+}
+
+/*estilo de carousel*/  
+.container{
+    float: right;
+    padding-right: 600pX;
+
+}
+.carousel .carousel-item img{
+    border-radius: 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+/*chat */
+.titulo{
+    float: none;
+    text-align: center;
+    padding-right: 600PX;
+    padding: 0em;
+    margin: 0em;
+    padding: 0em;
+   
+}
+
+body{
+    height: 100vh;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    width: 700px;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+    background-color: #30363c;
+    
+}
+.header h1 {
+    color: white;
+    padding: 15px;
+}
+
+.bodyr{
+    flex: 1;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px 30px; 
+}
+.massage{
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    border-bottom: 15px;
+}
+.user_message{
+    margin-left: auto;
+    background-color: white;
+    color: black;
+}
+.footer form{
+    display: flex;
+}
+form input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+form button{
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+}
+form button:hover{
+    background-color: #30363c;
+    transform: 0.2S ease;
+}
+
+
+.botones{
+    height: 40px;
+    position: absolute;
+    left: 800px;
+    top: 17%;
+    display: flex;
+}
+
+.botones input{
+    width: 135px;
+    margin-left: 10px;;
+}
+
+.textos{
+    margin-right: 20px;
+    position:absolute;
+    left: 825px;
+    margin-top: -730px;
+}
+
+.textos input{
+    height: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+table{
+    margin-top: -400px;
+    margin-left: 718px;
+}
+
+table, th, td{
+    border: 1px solid;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+}
+
+th{
+    background-color: #909090;
+    color:#252A2E;
+}
+
+td{
+    background-color:#c8c8c8;
+    color:#252A2E;
+}

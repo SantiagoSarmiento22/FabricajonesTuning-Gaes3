@@ -1,0 +1,139 @@
+/* EstilosLogin.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #1a2537;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+
+.formulario {
+    background: #fff;
+    margin-top: 150px;
+    padding-top: 3px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: none;
+    position: relative;
+}
+
+.input-contenedor::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #aaa;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent; /* Agregado */
+    color: #333; /* Agregado */
+}
+
+select {
+    appearance: none; /* Agregado */
+    -webkit-appearance: none; /* Agregado */
+    -moz-appearance: none; /* Agregado */
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btnRegistrar {
+    border: none;
+    width: 100%;
+    color: #999;
+    font-size: 18px;
+    background: transparent;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background: cadetblue;
+}
+
+p {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+h2 {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

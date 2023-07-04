@@ -1,0 +1,371 @@
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: #2d3235;
+    --bg-menu: #252A2E;
+    --bg-body: #C7E1FF;
+}
+
+/* GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco);
+    float: left;
+    
+}
+
+/* LAYOUT */
+.cerrar {
+    position: absolute;
+    top: 900px;
+}
+.menu  a{
+    color: #E0E0E0  ;
+    text-decoration: none;
+}
+
+.menu-dashboard {
+    max-width: 150px;
+    height: 100vh;
+    background: var(--bg-menu);
+    padding: 20px;
+    transition: max-width .3s ease;
+    position: sticky;
+    position: fixed;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo img {
+
+    height: 65px;
+    width: 90px;
+    transition: width .3s ease;
+}
+
+.top-menu .logo span {
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .toggle {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.top-menu .toggle i {
+    font-size: 35px;
+}
+.cerrar {
+    position: absolute;
+    top: 900px;
+}
+
+/* INPUT BOX */
+
+.input-search {
+    width: 100%;
+    margin: 50px 0;
+    background-color: var(--azul-opacidad);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input-search i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.input-search .input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    color: var(--blanco);
+    font-size: 22px;
+    display: none;
+}
+
+/* ENLACES MENU */
+
+.menu .enlace {
+    width: 100%;
+    padding: 20px 0 20px 17px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+.menu .enlace:hover {
+    background: var(--azul-opacidad);
+}
+
+.menu .enlace i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.menu .enlace span {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open {
+    max-width: 300px;
+}
+
+.menu-dashboard.open .top-menu .logo span {
+    display: block;
+}
+
+.menu-dashboard.open .input-search
+.menu-dashboard.open .menu .enlace {
+    width: auto;
+}
+
+.menu-dashboard.open .input-search .input {
+    display: block;
+}
+
+.menu-dashboard.open .menu .enlace {
+    padding: 20px;
+}
+
+.menu-dashboard.open .menu .enlace span {
+    opacity: 1;
+}   
+/*Busqueda*/
+
+body { 
+    min-height: 200vh;
+    background-image: linear-gradient(-10deg, #30363c 50%, #30363c 50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 400px;
+    top: 10%;
+    transform: translate(-50,-50%);
+    padding: 10px;
+}
+
+.buscar {
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color:  #30363c;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #954344;
+    transition: all .7s ease;
+}
+
+
+.Consultar{
+    width: 35px;
+    height: 35px;
+}
+
+.Modificar{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+::placeholder{
+    color: gray;
+}
+.btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #954344;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn i{
+    font-size: 25px;
+    color: rgb(243, 243, 243);
+    line-height: 80px;
+    transition: all .7s ease;
+}
+.container:hover .buscar {
+    width: 1000px;
+}
+
+.container:hover i{
+    transform: rotate(-360deg);
+}
+.empleCatalogo{
+    height: 300px;
+    position: absolute;
+    left: 800px;
+    top: 21%;
+}
+.empleCatalogo input{
+    width: 135px;
+    margin-left: 15px;
+
+}
+
+.btn:hover{
+    background-color: #954344;
+}
+
+/*Catatlogo*/
+
+.catalogo img{
+    width: 300px;
+    height: 300px;
+    background-color: #954344;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 400px;
+    top: 30%;
+    padding: 5px;
+
+}
+.catalogo h3{
+    margin-bottom: 20px;
+    position: absolute;
+    left: 750px;
+    top: 32%;
+    padding: 5px;
+
+}
+.catalogo li{
+    margin-bottom: 25px;
+    position: absolute;
+    left: 750px;
+    top: 35%;
+    padding: 5px;
+
+}
+
+
+.catalogo1 img{
+    width: 300px;
+    height: 300px;
+    background-color: #954344;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 1000px;
+    top: 30%;
+    padding: 5px;
+
+}
+.catalogo1 h3{
+    margin-bottom: 20px;
+    position: absolute;
+    left: 1350px;
+    top: 32%;
+    padding: 5px;
+}
+
+.catalogo2 img{
+    width: 300px;
+    height: 300px;
+    background-color: #954344;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 400px;
+    top: 70%;
+    padding: 5px;
+
+}
+.catalogo3 img{
+    width: 300px;
+    height: 300px;
+    background-color: #954344;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 1000px;
+    top: 70%;
+    padding: 5px;
+
+}
+.catalogo4 img{
+    width: 300px;
+    height: 300px;
+    background-color: #954344;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 400px;
+    top: 110%;
+    padding: 5px;
+
+}
+.catalogo5 img{
+    width: 300px;
+    height: 300px;
+    background-color: #954344;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 1000px;
+    top: 110%;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 50%;
+}
+.error404{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 35px;
+    position: absolute;
+    top: 65%;
+    left: 29%;
+}
+
+.boton{
+    position: absolute;
+    top: 80%;
+    left: 47%;
+        
+    }
+
+.boton input{
+    width: 100px;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+    background-color:  #3c50d3;
+    position: absolute;
+    border: #3c50d3;
+   
+}
+
+.boton a{
+    width: 100px;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+    background-color:  #3c50d3;
+    position: absolute;
+    border: #3c50d3;
+    text-decoration: none;
+    text-align: center;
+    top:20px ;
+}
